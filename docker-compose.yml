@@ -10,3 +10,12 @@ services:
     environment:
         SYNAPSE_SERVER_NAME: "matrix.matsu.fi"
         SYNAPSE_REPORT_STATS: "yes"
+
+  registration:
+    container_name: registration
+    image: matrix-registration
+    ports:
+      - 5000:5000
+    volumes:
+      - ./matrix-registration/data:/data
+    command: ["serve"]

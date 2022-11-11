@@ -1,1 +1,5 @@
 synapse/data
+matrix-registration/data/config.yaml
+matrix-registration/data/db.sqlite3
+matrix-registration/data/m_reg.log
+
