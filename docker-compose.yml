@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  synapse:
+    container_name: synapse
+    image: matrixdotorg/synapse
+    volumes:
+      - ./synapse/data:/data
+    ports:
+      - 8008:8008
+    environment:
+        SYNAPSE_SERVER_NAME: "matrix.matsu.fi"
+        SYNAPSE_REPORT_STATS: "yes"
